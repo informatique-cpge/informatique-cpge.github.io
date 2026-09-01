@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-sans: var(--font-geist);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #f6f4ef;
+  --foreground: #14202d;
+  --ink: #14202d;
+  --muted-ink: #687078;
+  --card: rgb(255 255 255 / 0.8);
+  --line: #deddd7;
+  --accent: #d5653b;
+  --accent-strong: #b64d29;
+  --icon-bg: #f4e9e2;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--background);
+  font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection { background: #e7a285; color: var(--ink); }
+
+.page-glow {
+  position: absolute;
+  inset: -12rem 0 auto 50%;
+  width: min(48rem, 120vw);
+  height: 34rem;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(229 156 120 / 0.18), transparent 67%);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
