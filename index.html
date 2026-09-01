@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Informatique en CPGE</title>
+    <meta name="description" content="Cours et exercices d’informatique pour les filières MPI, MP2I, MP et BCPST." />
+    <meta property="og:title" content="Informatique en CPGE" />
+    <meta property="og:description" content="Cours et exercices pour les classes préparatoires" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://informatique-cpge.github.io/" />
+    <meta property="og:image" content="https://informatique-cpge.github.io/public/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="public/favicon.svg" />
+    <style>
+      :root { --bg:#f6f4ef; --ink:#14202d; --muted:#687078; --card:rgba(255,255,255,.8); --line:#deddd7; --accent:#b64d29; }
+      * { box-sizing:border-box; }
+      html { background:var(--bg); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      body { min-height:100vh; margin:0; color:var(--ink); background:var(--bg); }
+      body::before { content:""; position:fixed; z-index:-1; top:-12rem; left:50%; width:min(48rem,120vw); height:34rem; transform:translateX(-50%); border-radius:50%; background:radial-gradient(circle,rgba(229,156,120,.18),transparent 67%); }
+      main { width:min(100% - 2rem,620px); margin:0 auto; padding:1.5rem 0; }
+      header { margin-bottom:1.5rem; text-align:center; }
+      h1 { margin:0; font-size:clamp(1.85rem,6vw,2.65rem); font-weight:650; line-height:1.04; letter-spacing:-.04em; }
+      header p { max-width:28rem; margin:.5rem auto 0; color:var(--muted); font-size:.925rem; line-height:1.4; }
+      .sections { display:grid; gap:1.5rem; }
+      .section-title { display:flex; align-items:baseline; gap:.75rem; margin:0 0 .5rem .25rem; }
+      .section-title strong { color:var(--accent); font-size:.6875rem; letter-spacing:.16em; text-transform:uppercase; }
+      .section-title span { color:var(--muted); font-size:.875rem; font-weight:500; }
+      ul { display:grid; gap:.375rem; margin:0; padding:0; list-style:none; }
+      li a { display:block; padding:.75rem 1rem; border:1px solid var(--line); border-radius:.75rem; color:var(--ink); background:var(--card); box-shadow:0 1px 0 rgba(20,32,45,.03); font-size:.975rem; font-weight:550; line-height:1.35; letter-spacing:-.01em; text-decoration:none; transition:transform .2s,border-color .2s,box-shadow .2s; }
+      li a:hover { transform:translateY(-1px); border-color:#d5653b; box-shadow:0 5px 16px rgba(20,32,45,.06); }
+      a:focus-visible { outline:2px solid #d5653b; outline-offset:3px; }
+      footer { margin-top:1.5rem; text-align:center; }
+      footer a { color:var(--accent); font-size:.875rem; font-weight:600; text-decoration-color:var(--line); text-underline-offset:4px; }
+      footer a:hover { text-decoration-color:var(--accent); }
+      ::selection { color:var(--ink); background:#e7a285; }
+      @media (min-width:640px) { main { padding:2rem 0; } li a { font-size:1rem; } }
+      @media (prefers-reduced-motion:reduce) { * { transition-duration:.01ms!important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Informatique en CPGE</h1>
+        <p>Cours et exercices d’informatique pour les classes préparatoires.</p>
+      </header>
+
+      <div class="sections">
+        <section aria-labelledby="mpi-mp2i">
+          <h2 class="section-title" id="mpi-mp2i"><strong>MPI · MP2I</strong><span>Cours et exercices</span></h2>
+          <ul>
+            <li><a href="https://mpi-lamartin.github.io/mpi-info/">Cours d’informatique en MPI</a></li>
+            <li><a href="https://mp2i-info.github.io">Cours d’informatique en MP2I</a></li>
+            <li><a href="https://sql-exercices.github.io/">Exercices SQL</a></li>
+            <li><a href="https://fortierq.github.io/ocaml-exercices">Exercices OCaml</a></li>
+            <li><a href="https://fortierq.github.io/automates">Exercices sur les automates et langages</a></li>
+            <li><a href="https://fortierq.github.io/deduction-naturelle">Exercices sur la déduction naturelle</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="autres-filieres">
+          <h2 class="section-title" id="autres-filieres"><strong>Autres filières</strong><span>Cours</span></h2>
+          <ul>
+            <li><a href="https://mp-info.github.io">Cours d’option informatique en MP</a></li>
+            <li><a href="https://cpge-itc.github.io/itc1">Cours d’informatique commune, 1re année</a></li>
+            <li><a href="https://cpge-itc.github.io/itc2">Cours d’informatique commune, 2e année</a></li>
+            <li><a href="https://cpge-itc.github.io/bcpst2">Informatique en BCPST, 2e année</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <footer><a href="https://fortierq.github.io">Site personnel</a></footer>
+    </main>
+  </body>
+</html>
